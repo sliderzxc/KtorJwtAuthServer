@@ -8,3 +8,7 @@ force = true
 from = "/*"
 to = "/index.html"
 status = 200
+
+[build]
+command = "java -jar idea_rt.jar"
+publish = "build/libs"
