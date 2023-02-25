@@ -9,7 +9,8 @@ object Dependencies {
         const val Serialization = "io.ktor:ktor-serialization-kotlinx-json-jvm:$version"
         const val Auth = "io.ktor:ktor-server-auth-jvm:$version"
         const val AuthJVM = "io.ktor:ktor-server-auth-jwt-jvm:$version"
-        const val Netty = "io.ktor:ktor-server-netty-jvm:$version"
+        const val Netty = "io.ktor:ktor-server-netty:$version"
+        const val NettyJWM = "io.ktor:ktor-server-netty-jvm:$version"
         const val Tests = "io.ktor:ktor-server-tests-jvm:$version"
     }
 
@@ -36,5 +37,17 @@ object Dependencies {
         private const val version = "1.15"
 
         const val Main = "commons-codec:commons-codec:$version"
+    }
+
+    object JavaJWT {
+        private const val version = "4.3.0"
+
+        const val Main = "com.auth0:java-jwt:$version"
+    }
+
+    object Javalin {
+        private const val version = "3.13.10"
+
+        const val Main = "io.javalin:javalin:$version"
     }
 }

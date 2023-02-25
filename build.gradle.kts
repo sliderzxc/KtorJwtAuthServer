@@ -27,6 +27,7 @@ dependencies {
     implementation(Dependencies.Ktor.Auth)
     implementation(Dependencies.Ktor.AuthJVM)
     implementation(Dependencies.Ktor.Netty)
+    implementation(Dependencies.Ktor.NettyJWM)
     testImplementation(Dependencies.Ktor.Tests)
     //Logback
     implementation(Dependencies.Logback.Classic)
@@ -37,4 +38,8 @@ dependencies {
     implementation(Dependencies.KMongo.Coroutine)
     //Codec
     implementation(Dependencies.Codec.Main)
+    //Java JWT
+    implementation(Dependencies.JavaJWT.Main)
+    //Javalin
+    implementation(Dependencies.Javalin.Main)
 }
