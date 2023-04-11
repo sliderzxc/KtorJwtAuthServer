@@ -12,7 +12,3 @@ status = 200
 [build]
 command = "java -jar idea_rt.jar"
 publish = "build/libs"
-
-[build]
-command = "gradle build"
-publish = "build/libs"
