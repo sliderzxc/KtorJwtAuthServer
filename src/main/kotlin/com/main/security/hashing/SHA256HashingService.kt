@@ -1,7 +1,5 @@
 package com.main.security.hashing
 
-import com.main.security.hashing.HashingService
-import com.main.security.hashing.SaltedHash
 import org.apache.commons.codec.binary.Hex
 import org.apache.commons.codec.digest.DigestUtils
 import java.security.SecureRandom

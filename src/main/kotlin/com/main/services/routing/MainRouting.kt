@@ -9,26 +9,30 @@ import com.main.services.routing.auth.getUserIdRouting
 import com.main.services.routing.auth.signInRouting
 import com.main.services.routing.auth.signUpRouting
 import io.ktor.server.application.*
+import io.ktor.server.response.*
 import io.ktor.server.routing.*
 
 fun Application.configureRouting(
-    userDataSource: UserDataSource,
-    hashingService: HashingService,
-    tokenService: TokenService,
-    tokenConfig: TokenConfig
+//    userDataSource: UserDataSource,
+//    hashingService: HashingService,
+//    tokenService: TokenService,
+//    tokenConfig: TokenConfig
 ) {
     routing {
-        signInRouting(
-            userDataSource = userDataSource,
-            hashingService = hashingService,
-            tokenService = tokenService,
-            tokenConfig = tokenConfig
-        )
-        signUpRouting(
-            userDataSource = userDataSource,
-            hashingService = hashingService
-        )
-        authenticateRouting()
-        getUserIdRouting()
+//        signInRouting(
+//            userDataSource = userDataSource,
+//            hashingService = hashingService,
+//            tokenService = tokenService,
+//            tokenConfig = tokenConfig
+//        )
+//        signUpRouting(
+//            userDataSource = userDataSource,
+//            hashingService = hashingService
+//        )
+//        authenticateRouting()
+//        getUserIdRouting()
+        get("/helloworld") {
+            call.respond("Hello Fucking World")
+        }
     }
 }
